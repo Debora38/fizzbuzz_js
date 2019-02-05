@@ -1,6 +1,10 @@
 var Fizzbuzz = function() {
 
-Fizzbuzz.prototype.divisibleByThree = function(num) {
- return (num % 3 === 0);
-};
+  Fizzbuzz.prototype.checks_fizzbuzz = function(num) {
+   if (num % 15 === 0) { return "fizzbuzz" }
+   if (num % 3 === 0) { return "fizz" }
+   if (num % 5 === 0) { return "buzz" }
+   return num
+  };
+
 };
